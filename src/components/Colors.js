@@ -2,10 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Color from './Color';
 
+
 export default function Colors({ colors }) {
-  const colorsList = colors.map(({ name, hex, rgb }) => {
-    <li>
-      <Color name={name} hex={hex} rgb={rgb} />
+
+  const colorsList = colors.map(color => {
+    <li key={color.name}>
+      <Color name={color.name} hex={color.hex} rgb={color.rgb} />
     </li>;
   });
   return (
