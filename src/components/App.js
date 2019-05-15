@@ -4,18 +4,19 @@ import Header from './Header';
 import Footer from './Footer';
 
 export default function App() {
-  const title = 'My Photos';
-  const photos = [
-    { },
-    { },
-    { }
-  ];
+  // const title = 'My Photos';
+  // const photos = [
+  //   { },
+  //   { },
+  //   { }
+  // ];
   return (
     <>
       <Header />
-      <PhotoAlbum title={title} photos={photos} />
+      {/* <PhotoAlbum title={title} photos={photos} /> */}
       <Footer />
     </>
+
   );
 
 }
