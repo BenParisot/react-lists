@@ -1,15 +1,18 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Colors from '../src/components/Colors';
+import PhotoAlbum from '../src/components/PhotoAlbum';
 
-describe('Colors component', () => {
-  it('generates a list of colors', () => {
-    const colors = [
-      { name: 'red', hex: '#ff0000', rgb: { red: 255, green: 0, blue: 0 } },
-      { name: 'green', hex: '#00ff00', rgb: { red: 0, green: 255, blue: 0 } },
-      { name: 'blue', hex: '#0000ff', rgb: { red: 0, green: 0, blue: 255 } }
+describe('PhotoAlbum component', () => {
+  it('generates a list of photos', () => {
+    const title = 'My Photos';
+    const photos = [
+      { photo: 'assets/tina1.jpeg' },
+      { photo: 'assets/tina2.jpeg' },
+      { photo: 'assets/tina3.jpeg' },
+      { photo: 'assets/tina4.jpg' },
+      { photo: 'assets/tina5.jpg' }
     ];
-    const wrapper = shallow(<Colors colors={colors} />);
+    const wrapper = shallow(<PhotoAlbum title={title} photos={photos} />);
     expect(wrapper).toMatchSnapshot();
   });
 });
