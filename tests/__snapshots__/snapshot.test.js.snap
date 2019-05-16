@@ -1,51 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Colors component generates a list of colors 1`] = `
-<ul>
-  <li
-    key="red"
-  >
-    <Color
-      hex="#ff0000"
-      name="red"
-      rgb={
+exports[`PhotoAlbum component generates a list of photos 1`] = `
+<section
+  className="album"
+>
+  <h2>
+    My Photos
+  </h2>
+  <Photos
+    photos={
+      Array [
         Object {
-          "blue": 0,
-          "green": 0,
-          "red": 255,
-        }
-      }
-    />
-  </li>
-  <li
-    key="green"
-  >
-    <Color
-      hex="#00ff00"
-      name="green"
-      rgb={
+          "photo": "assets/tina1.jpeg",
+        },
         Object {
-          "blue": 0,
-          "green": 255,
-          "red": 0,
-        }
-      }
-    />
-  </li>
-  <li
-    key="blue"
-  >
-    <Color
-      hex="#0000ff"
-      name="blue"
-      rgb={
+          "photo": "assets/tina2.jpeg",
+        },
         Object {
-          "blue": 255,
-          "green": 0,
-          "red": 0,
-        }
-      }
-    />
-  </li>
-</ul>
+          "photo": "assets/tina3.jpeg",
+        },
+        Object {
+          "photo": "assets/tina4.jpg",
+        },
+        Object {
+          "photo": "assets/tina5.jpg",
+        },
+      ]
+    }
+  />
+</section>
 `;
