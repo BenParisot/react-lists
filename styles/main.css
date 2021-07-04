@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: coral;
+    color: white;
+    font-size: 22px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: coral;
+    color: white;
+    font-size: 14px; 
+}

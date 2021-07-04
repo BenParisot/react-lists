@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PhotoAlbum component generates a list of photos 1`] = `
+<section
+  className="album"
+>
+  <h2>
+    My Photos
+  </h2>
+  <Photos
+    photos={
+      Array [
+        Object {
+          "photo": "assets/tina1.jpeg",
+        },
+        Object {
+          "photo": "assets/tina2.jpeg",
+        },
+        Object {
+          "photo": "assets/tina3.jpeg",
+        },
+        Object {
+          "photo": "assets/tina4.jpg",
+        },
+        Object {
+          "photo": "assets/tina5.jpg",
+        },
+      ]
+    }
+  />
+</section>
+`;
